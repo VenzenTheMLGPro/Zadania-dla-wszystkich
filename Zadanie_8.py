@@ -1,11 +1,12 @@
 from random import randint
 a = int(input("Podaj całkowitą liczbę nieujemną: "))
 i = 0
-print(a * " ", "X")
+print((a + 2) * " ", "X")
 while i < a - 1:
     i += 1
-    print((a - i) * " ", "*" * (i * 2 + 1))
-print(a * " ", "U")
+    n = randint(2, 2 * i)
+    print((a - i) * " ", ((2 * i) - n) * "*", "o", n * "*")
+print((a + 2) * " ", "U")
 
 
 
